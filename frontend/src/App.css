@@ -1,0 +1,9 @@
+.cover{
+    background-image: url(./assets/cat.png);
+    border-image-width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-attachment: local;
+    background-position: center;
+   
+}
