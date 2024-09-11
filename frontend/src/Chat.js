@@ -10,7 +10,7 @@ function Chat({ socket, username, room }) {
     
     const fetchMessages = async () => {
       try {
-        const response = await axios.post('http://localhost:5000/messages', { room });
+        const response = await axios.post('https://chat-applications-backend-kfi3.onrender.com/messages', { room });
         setMessageList(response.data);
       } catch (error) {
         console.error("Failed to load messages:", error);
