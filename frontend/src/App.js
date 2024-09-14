@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import  './App.css'
 import io from 'socket.io-client';
 import Chat from './Chat';
-const socket = io('http://localhost:5000');
+const socket = io('https://chat-applications-nu.vercel.app/');
 
 function App() {
   const [username, setUsername] = useState("");
