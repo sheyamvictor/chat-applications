@@ -18,13 +18,10 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect(`mongodb://localhost:27017/chat-app`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect('mongodb://localhost:27017/chat-app')
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
-
+  
 // Message Schema
 const MessageSchema = new mongoose.Schema({
   username: String,
